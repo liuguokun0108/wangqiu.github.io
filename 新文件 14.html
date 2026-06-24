@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>正在跳转预约...</title>
+</head>
+<body>
+    <p>正在为您跳转至支付界面，请稍候...</p>
+    
+    <form id="autoForm" action="https://motion.buct.edu.cn/changguanyuyue1/create.php" method="POST">
+        <input type="hidden" name="d" value="2026-06-27">
+        <input type="hidden" name="c" value="网球场">
+        <input type="hidden" name="Id_all" value="4428150">
+    </form>
+
+    <script>
+        // 页面加载完成后立即自动提交表单
+        window.onload = function() {
+            document.getElementById('autoForm').submit();
+        };
+    </script>
+</body>
+</html>
